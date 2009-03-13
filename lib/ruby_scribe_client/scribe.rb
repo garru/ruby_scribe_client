@@ -4,9 +4,9 @@
 # DO NOT EDIT UNLESS YOU ARE SURE THAT YOU KNOW WHAT YOU ARE DOING
 #
 
-require File.join([File.dirname(__FILE__),'..','vendor','thrift'])
-require File.join([File.dirname(__FILE__) ,'/FacebookService'])
-require File.dirname(__FILE__) + '/scribe_types'
+require File.join([File.dirname(__FILE__), '..', '..', 'vendor','thrift'])
+require File.join([File.dirname(__FILE__) ,'FacebookService'])
+require File.join([File.dirname(__FILE__), 'scribe_types'])
 
 module Scribe
   class Client < FacebookService::Client 

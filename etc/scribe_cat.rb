@@ -5,7 +5,7 @@ begin
   puts ARGV.inspect
   if ARGV.size == 1
     category = ARGV[0]
-    host = '127.0.0.1'
+    host = 'metrics.seriousops.com'
     port = 1463
   elsif ARGV.size == 3 && ARGV[0] == '-h'
     category = ARGV[1]
