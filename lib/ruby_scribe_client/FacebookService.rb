@@ -370,7 +370,7 @@ module FacebookService
     def struct_fields; FIELDS; end
 
     def validate
-      unless @success.nil? || fb_status::VALID_VALUES.include?(@success)
+      unless @success.nil? || Fb_status::VALID_VALUES.include?(@success)
         raise Thrift::ProtocolException.new(Thrift::ProtocolException::UNKNOWN, 'Invalid value of field success!')
       end
     end
