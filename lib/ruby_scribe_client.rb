@@ -20,7 +20,7 @@ class ScribeLogger
       log_entry = LogEntry.new({:category => category_key(category), :message => message.to_s})
       connect
       result = @client.Log([log_entry])
-      @transport.flush
+      # @transport.flush
       return result
     rescue  Thrift::Exception => tx
       print 'Thrift::Exception: ', tx.message, "\n"

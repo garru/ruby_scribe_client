@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-require 'lib/scribe_logger'
+require 'lib/ruby_scribe_client'
 begin
   port = 1463
   puts ARGV.inspect
