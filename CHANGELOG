@@ -1,4 +1,4 @@
-v0.0.6 fb303: added host option.  moved client to module namespace 
+v0.0.6.1 fb303: added host option.  moved client to module namespace 
 v0.0.5 wrote fb303 client for scribe mgmt
 v0.0.4 removing flush because framed transport doesn't need it
 v0.0.3 flush instead of open/close each time

@@ -10,7 +10,7 @@ class ScribeStats
   CATEGORY = 'scribe'
 
   def initialize(host, port)
-    @scribe = FB303.new(host, port)
+    @scribe = FB303::Client.new(host, port)
     @category = 'scribe'
   end
 
