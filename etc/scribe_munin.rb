@@ -10,7 +10,7 @@ class ScribeStats
   CATEGORY = 'scribe'
 
   def initialize(host, port)
-    @scribe = FB303.new("#{host}:#{port}")
+    @scribe = FB303.new(host, port)
     @category = 'scribe'
   end
 
@@ -74,7 +74,7 @@ else
   $stderr.puts "can't find chart name"
 end
 
-starling = StarlingStats.new(HOST, PORT)
+starling = ScribeStats.new(HOST, PORT)
 
 command = "#{chart_name}_munin"
 

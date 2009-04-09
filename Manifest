@@ -1,6 +1,7 @@
 CHANGELOG
 etc/scribe_cat.rb
-etc/scribe_munin_plugin.rb
+etc/scribe_munin.rb
+etc/scribe_net
 etc/test.rb
 lib/ruby_scribe_client/FacebookService.rb
 lib/ruby_scribe_client/fb303_client.rb
@@ -14,7 +15,6 @@ LICENSE
 Manifest
 Rakefile
 README
-ruby_scribe_client.gemspec
 vendor/thrift/client.rb
 vendor/thrift/deprecation.rb
 vendor/thrift/exceptions.rb
