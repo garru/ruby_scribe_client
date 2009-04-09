@@ -15,6 +15,7 @@ LICENSE
 Manifest
 Rakefile
 README
+ruby_scribe_client.gemspec
 vendor/thrift/client.rb
 vendor/thrift/deprecation.rb
 vendor/thrift/exceptions.rb
