@@ -7,7 +7,7 @@
 require File.join([File.dirname(__FILE__), '..', '..', 'vendor','thrift'])
 require File.join([File.dirname(__FILE__) ,'FacebookService'])
 require File.join([File.dirname(__FILE__), 'scribe_types'])
-
+require File.join([File.dirname(__FILE__), 'fb303_client'])
 module Scribe
   class Client < FacebookService::Client 
     include ::Thrift::Client
