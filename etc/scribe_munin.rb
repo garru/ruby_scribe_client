@@ -29,17 +29,17 @@ class ScribeStats
     graph_config = <<-END.gsub(/  +/, '')
       graph_title Scribe Traffic
       graph_args --base 1000
-      graph_vlabel bits read(-) / written(+) per second
+      graph_vlabel bits per second
       graph_category #{CATEGORY}
       graph_order bytes_read bytes_written
     END
 
     stat_config = ''
-    counters.keys do |stat|
-      stat.gsub!(/\s/){'_'}
-      stats.each do |var,value|
-        value = "#{stat}," + value if var == :cdef
-        stat_config << "#{stat}.#{var} #{value}\n"
+    counters.keys.each do |stat|
+      stat_name = stat.gsub(/\s/){'_'}
+      net_stats.each do |var,value|
+        value = "#{stat_name}," + value if var == :cdef
+        stat_config << "#{stat_name}.#{var} #{value}\n"
       end
     end
 
@@ -51,6 +51,7 @@ class ScribeStats
     @scribe.getCounters.each do |k, v|
       ret << "#{k.gsub(/\s/){'_'}}.value #{v}\n"
     end
+    ret
   end
     
 private  
