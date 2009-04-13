@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{ruby_scribe_client}
-  s.version = "0.0.6.1"
+  s.version = "0.0.7"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.2") if s.respond_to? :required_rubygems_version=
   s.authors = ["Gary Tsang"]
-  s.date = %q{2009-04-09}
+  s.date = %q{2009-04-13}
   s.description = %q{Ruby Scribe Client. Package and Wrapper for generated ruby interfaces}
   s.email = %q{}
   s.extra_rdoc_files = ["CHANGELOG", "lib/ruby_scribe_client/FacebookService.rb", "lib/ruby_scribe_client/fb303_client.rb", "lib/ruby_scribe_client/fb303_types.rb", "lib/ruby_scribe_client/reflection_limited_types.rb", "lib/ruby_scribe_client/scribe.rb", "lib/ruby_scribe_client/scribe_mgmt.rb", "lib/ruby_scribe_client/scribe_types.rb", "lib/ruby_scribe_client.rb", "LICENSE", "README"]
