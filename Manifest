@@ -9,6 +9,7 @@ lib/ruby_scribe_client/fb303_types.rb
 lib/ruby_scribe_client/reflection_limited_types.rb
 lib/ruby_scribe_client/scribe.rb
 lib/ruby_scribe_client/scribe_mgmt.rb
+lib/ruby_scribe_client/scribe_server.rb
 lib/ruby_scribe_client/scribe_types.rb
 lib/ruby_scribe_client.rb
 LICENSE
