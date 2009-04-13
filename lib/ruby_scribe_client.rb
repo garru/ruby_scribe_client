@@ -23,7 +23,7 @@ class ScribeLogger
       # @transport.flush
       return result
     rescue  Thrift::Exception => tx
-      
+      raise tx
     end    
   end
   

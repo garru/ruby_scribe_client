@@ -35,7 +35,7 @@ module Thrift
             loop do
               @processor.process(prot, prot)
             end
-          rescue Thrift::TransportException, Thrift::ProtocolException
+          rescue Thrift::TransportException, Thrift::ProtocolException => e
           ensure
             trans.close
           end

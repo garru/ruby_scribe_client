@@ -36,6 +36,7 @@ module Scribe
     def process_Log(seqid, iprot, oprot)
       args = read_args(iprot, Log_args)
       result = Log_result.new()
+      puts result
       result.success = @handler.Log(args.messages)
       write_result(result, oprot, 'Log', seqid)
     end
