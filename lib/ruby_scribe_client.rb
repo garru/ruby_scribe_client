@@ -4,8 +4,8 @@ require File.join([File.dirname(__FILE__), 'ruby_scribe_client', 'scribe'])
 class ScribeLogger
   attr_accessor :host, :port, :namespace
   
-  def initialize(host, port, namespace = nil)
-    @transport = Thrift::FramedTransport.new(Thrift::Socket.new(host, port))
+  def initialize(host, port, namespace = nil, timeout = nil)
+    @transport = Thrift::FramedTransport.new(Thrift::Socket.new(host, port, timeout))
     @protocol = Thrift::BinaryProtocol.new(@transport, false, false)
     @client = Scribe::Client.new(@protocol)
     @namespace = namespace
