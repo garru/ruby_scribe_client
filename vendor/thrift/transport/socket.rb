@@ -8,6 +8,7 @@
 #
 require 'thrift/transport'
 require 'socket'
+require 'timeout'
 
 module Thrift
   class Socket < Transport
