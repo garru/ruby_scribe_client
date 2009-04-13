@@ -23,7 +23,11 @@ module Thrift
 
     def open
       begin
-        @handle = TCPSocket.new(@host, @port)
+        status = Timeout::timeout(@timeout) {
+          @handle = TCPSocket.new(@host, @port)
+        }
+      rescue Timeout::Error
+        raise TransportException.new(TransportException::TIMED_OUT, "Could not connect to #{@desc}")
       rescue StandardError
         raise TransportException.new(TransportException::NOT_OPEN, "Could not connect to #{@desc}")
       end
