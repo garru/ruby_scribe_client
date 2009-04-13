@@ -1,3 +1,4 @@
+v0.1.0 added scribe server
 v0.0.9 requiring timeout
 v0.0.8 also adding timeout to socket open
 v0.0.7 adding timeout
